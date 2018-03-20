@@ -1,0 +1,3498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_master_slave_test</class>
+ <widget class="QDialog" name="Dialog_master_slave_test">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1241</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>親子機混在試験</string>
+  </property>
+  <widget class="QLabel" name="label_master_slave">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>20</y>
+     <width>781</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>評価しようとする項目にチェックを入れて、“作成”ボタンを押下してください。</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pic_master_slave">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="group_fan_strength">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>411</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>風量</string>
+   </property>
+   <widget class="QGroupBox" name="group_fan_strength_auto">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>101</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Auto</string>
+    </property>
+    <widget class="QTableWidget" name="table_fan_strength_auto">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_fan_strength_auto">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>180</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="group_fan_strength_high">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>30</y>
+      <width>101</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>High</string>
+    </property>
+    <widget class="QTableWidget" name="table_fan_strength_high">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_fan_strength_high">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>180</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="group_fan_strength_quiet">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>30</y>
+      <width>101</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Quiet</string>
+    </property>
+    <widget class="QTableWidget" name="table_fan_strength_quiet">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_fan_strength_quiet">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>180</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="group_fan_new_strength">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>80</y>
+     <width>411</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>風量α</string>
+   </property>
+   <widget class="QGroupBox" name="group_fan_new_strength_hihi">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>101</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Hi-Hi</string>
+    </property>
+    <widget class="QTableWidget" name="table_fan_new_strength_hihi">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_fan_new_strength_hihi">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>180</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="group_fan_new_strength_mehi">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>30</y>
+      <width>101</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Me-Hi</string>
+    </property>
+    <widget class="QTableWidget" name="table_fan_new_strength_mehi">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_fan_new_strength_mehi">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>180</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="group_fan_new_strength_lolo">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>30</y>
+      <width>101</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Lo-Lo</string>
+    </property>
+    <widget class="QTableWidget" name="table_fan_new_strength_lolo">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_fan_new_strength_lolo">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>180</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="group_horizontal">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>350</y>
+     <width>581</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>左右風向板</string>
+   </property>
+   <widget class="QGroupBox" name="group_horizontal_1">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string># 1</string>
+    </property>
+    <widget class="QTableWidget" name="table_horizontal_1">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_horizontal_1">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>30</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="group_horizontal_2">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>50</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string># 2</string>
+    </property>
+    <widget class="QTableWidget" name="table_horizontal_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_horizontal_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>0</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="group_horizontal_3">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>50</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string># 3</string>
+    </property>
+    <widget class="QTableWidget" name="table_horizontal_3">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_horizontal_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="group_horizontal_4">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>140</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string># 4</string>
+    </property>
+    <widget class="QTableWidget" name="table_horizontal_4">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_horizontal_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="group_vertical">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>360</y>
+     <width>521</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>上下風向板</string>
+   </property>
+   <widget class="QGroupBox" name="group_vertical_1">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string># 1</string>
+    </property>
+    <widget class="QTableWidget" name="table_vertical_1">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_vertical_1">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="group_vertical_2">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>30</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string># 2</string>
+    </property>
+    <widget class="QTableWidget" name="table_vertical_2">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>40</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_vertical_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="group_vertical_3">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>30</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string># 3</string>
+    </property>
+    <widget class="QTableWidget" name="table_vertical_3">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>50</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_vertical_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="group_vertical_4">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>160</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string># 4</string>
+    </property>
+    <widget class="QTableWidget" name="table_vertical_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_vertical_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <zorder>table_vertical_4</zorder>
+    <zorder>check_vertical_4</zorder>
+    <zorder>line</zorder>
+   </widget>
+   <zorder>group_vertical_1</zorder>
+   <zorder>group_vertical_2</zorder>
+   <zorder>group_vertical_3</zorder>
+   <zorder>group_vertical_4</zorder>
+   <zorder>horizontalLayoutWidget</zorder>
+  </widget>
+  <widget class="QGroupBox" name="group_other">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>80</y>
+     <width>341</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>その他</string>
+   </property>
+   <widget class="QGroupBox" name="group_eco">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Economy</string>
+    </property>
+    <widget class="QTableWidget" name="table_eco">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>0</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_eco">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="group_anti">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>40</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Anti-freeze</string>
+    </property>
+    <widget class="QTableWidget" name="table_anti">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>-10</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_anti">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="group_test">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>150</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Test</string>
+    </property>
+    <widget class="QTableWidget" name="table_test">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>-20</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_test">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="group_filter">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>150</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Filter sign</string>
+    </property>
+    <widget class="QTableWidget" name="table_filter">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>0</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_filter">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="group_sensor">
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>360</y>
+     <width>321</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>人感センサ</string>
+   </property>
+   <widget class="QGroupBox" name="group_auto_save">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Auto Save</string>
+    </property>
+    <widget class="QTableWidget" name="table_auto_save">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_auto_save">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="group_auto_on_off">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>On/Off</string>
+    </property>
+    <widget class="QTableWidget" name="table_auto_on_off">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>30</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="check_auto_on_off">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="group_auto_off">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>30</y>
+      <width>120</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Auto Off</string>
+    </property>
+    <widget class="QCheckBox" name="check_auto_off">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="table_auto_off">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>61</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string/>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>親機</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>子機</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>親</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>子</string>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="2" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="3" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="4" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="5" column="0">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+     <item row="5" column="1">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textAlignment">
+       <set>AlignCenter</set>
+      </property>
+     </item>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>540</y>
+     <width>1211</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>560</y>
+     <width>351</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="btn_cancel_master_slave">
+      <property name="text">
+       <string>キャンセル</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_create_master_slave">
+      <property name="text">
+       <string>作成</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>560</y>
+     <width>351</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QPushButton" name="btn_select_all_master_slave">
+      <property name="text">
+       <string>全選択</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_opposite_master_slave">
+      <property name="text">
+       <string>逆転</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

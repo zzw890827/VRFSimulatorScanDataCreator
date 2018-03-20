@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_items</class>
+ <widget class="QDialog" name="Dialog_items">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>572</width>
+    <height>242</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Items</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>50</y>
+     <width>50</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_1_items">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>431</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>以下、試験をしたい項目を選び、“作成ボタン”を押下してください。</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2_items">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>40</y>
+     <width>431</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>また、詳細を設定する場合、“詳細”ボタンを押下してください。</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3_items">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>60</y>
+     <width>431</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>キャンセルの場合、“キャンセル”ボタンを押下してください。</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pic_items">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>100</y>
+     <width>431</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QRadioButton" name="radio_1_items">
+      <property name="text">
+       <string>表示試験</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QRadioButton" name="radio_2_items">
+      <property name="text">
+       <string>親子機試験</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_1_radio_items">
+      <property name="text">
+       <string>モニタ画面や運転設定画面における要素の表示試験</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="label_2_radio_items">
+      <property name="text">
+       <string>親機と子機混在の時に機能の有無試験</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>551</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>200</y>
+     <width>361</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="btn_cancel_items">
+      <property name="text">
+       <string>キャンセル</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_detail_items">
+      <property name="text">
+       <string>詳細</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_create_items">
+      <property name="text">
+       <string>作成</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
