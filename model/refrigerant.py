@@ -37,7 +37,15 @@ class Vrf(object):
         sub_machine_code: 子機コード
         neuron_id: 神経ID
         route: ルート
-        prepare: 予備エリア
+        prepare_1: 予備エリア
+        prepare_2: 予備エリア
+        prepare_3: 予備エリア
+        prepare_4: 予備エリア
+        prepare_5: 予備エリア
+        prepare_6: 予備エリア
+        prepare_7: 予備エリア
+        prepare_8: 予備エリア
+        function_1: 追加機能
 
     """
 
@@ -63,8 +71,15 @@ class Vrf(object):
         self.sub_machine_code = 'Unit'
         self.neuron_id = 'AA.BB.C2.F0.00.01'
         self.route = '/0'
-        self.prepare = ['', '', '', '', '', '', '', '']
-        self.function = []
+        self.prepare_1 = ''
+        self.prepare_2 = ''
+        self.prepare_3 = ''
+        self.prepare_4 = ''
+        self.prepare_5 = ''
+        self.prepare_6 = ''
+        self.prepare_7 = ''
+        self.prepare_8 = ''
+        self.function = ''
 
     def list_all_members(self):
         """内部Attributesを表示
