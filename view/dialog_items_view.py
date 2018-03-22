@@ -17,7 +17,6 @@ from PyQt5.QtCore import Qt, QCoreApplication
 from PyQt5.QtGui import QFont, QImage, QPixmap
 
 from ui import Ui_Dialog_items
-from controller import create_vrf_system_data
 
 
 class DialogItems(QWidget, Ui_Dialog_items):

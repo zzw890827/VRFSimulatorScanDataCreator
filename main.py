@@ -16,9 +16,11 @@ from PyQt5.QtWidgets import QApplication
 # from dialog_items_view import DialogItems
 # from view import DialogFinish
 from view import DialogMaterSlaveTest
+from controller import build_master_slave_test_system
 
 if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    ui = DialogMaterSlaveTest()
-    ui.show()
-    sys.exit(app.exec_())
+    # app = QApplication(sys.argv)
+    # ui = DialogMaterSlaveTest()
+    # ui.show()
+    # sys.exit(app.exec_())
+    build_master_slave_test_system([2])

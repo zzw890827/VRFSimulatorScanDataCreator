@@ -2287,15 +2287,7 @@
       <string/>
      </property>
     </widget>
-    <zorder>table_vertical_4</zorder>
-    <zorder>check_vertical_4</zorder>
-    <zorder>line</zorder>
    </widget>
-   <zorder>group_vertical_1</zorder>
-   <zorder>group_vertical_2</zorder>
-   <zorder>group_vertical_3</zorder>
-   <zorder>group_vertical_4</zorder>
-   <zorder>horizontalLayoutWidget</zorder>
   </widget>
   <widget class="QGroupBox" name="group_other">
    <property name="geometry">
@@ -3471,7 +3463,7 @@
     <rect>
      <x>20</x>
      <y>560</y>
-     <width>351</width>
+     <width>171</width>
      <height>31</height>
     </rect>
    </property>
@@ -3479,14 +3471,7 @@
     <item>
      <widget class="QPushButton" name="btn_select_all_master_slave">
       <property name="text">
-       <string>全選択</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="btn_opposite_master_slave">
-      <property name="text">
-       <string>逆転</string>
+       <string>反転</string>
       </property>
      </widget>
     </item>
