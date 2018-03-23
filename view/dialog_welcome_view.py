@@ -16,7 +16,9 @@ from PyQt5.QtWidgets import QWidget
 from PyQt5.QtCore import Qt, QCoreApplication
 from PyQt5.QtGui import QFont, QImage, QPixmap
 
-from ui.dialog_welcome import Ui_Dialog_welcome
+from ui import Ui_Dialog_welcome
+
+from view import DialogItems
 
 
 class DialogWelcome(QWidget, Ui_Dialog_welcome):
@@ -27,7 +29,7 @@ class DialogWelcome(QWidget, Ui_Dialog_welcome):
     def __init__(self):
         super(DialogWelcome, self).__init__()
         self.setupUi(self)
-        self.default_font = 'HGP行書体'
+        self.default_font = '游ゴシック 本文'
         self.icon_path = 'resources/icons/wizard.png'
 
         # フォント
@@ -51,6 +53,9 @@ class DialogWelcome(QWidget, Ui_Dialog_welcome):
         self.label_pic_welcome.setAutoFillBackground(True)
         self.label_pic_welcome.setPixmap(QPixmap.fromImage(self.image))
 
+        # Items画面
+        self.next_page=DialogItems()
+
         # Signal
         # キャンセルボタン
         self.btn_cancel_welcome.clicked.connect(QCoreApplication.quit)
@@ -65,5 +70,5 @@ class DialogWelcome(QWidget, Ui_Dialog_welcome):
 
         次へボタンを押下時の動き
         """
-        print('Coming soon!')
+        self.next_page.show()
         self.close()

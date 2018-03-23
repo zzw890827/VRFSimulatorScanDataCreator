@@ -1,4 +1,4 @@
 from .dialog_finish_view import DialogFinish
+from .dialog_master_slave_test_view import DialogMaterSlaveTest
 from .dialog_items_view import DialogItems
 from .dialog_welcome_view import DialogWelcome
-from .dialog_master_slave_test_view import DialogMaterSlaveTest

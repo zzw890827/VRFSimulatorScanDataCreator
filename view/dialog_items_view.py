@@ -18,6 +18,8 @@ from PyQt5.QtGui import QFont, QImage, QPixmap
 
 from ui import Ui_Dialog_items
 
+from view import DialogMaterSlaveTest
+
 
 class DialogItems(QWidget, Ui_Dialog_items):
     """試験項目ウィザードクラス
@@ -62,6 +64,9 @@ class DialogItems(QWidget, Ui_Dialog_items):
 
         self.setFixedSize(self.width(), self.height())  # サイズ変更禁止
 
+        # 親子機画面
+        self.next_page_master = DialogMaterSlaveTest()
+
         # Signal
         # キャンセルボタン
         self.btn_cancel_items.clicked.connect(QCoreApplication.quit)
@@ -84,7 +89,7 @@ class DialogItems(QWidget, Ui_Dialog_items):
         Returns:
             VRFシミュレーター用データ
         """
-        create_vrf_system_data(n)
+        # create_vrf_system_data(n)
         self.close()
 
     def btn_clicked_event_detail(self):
@@ -92,5 +97,5 @@ class DialogItems(QWidget, Ui_Dialog_items):
 
         詳細ボタンを押下時の動き
         """
-        print('Coming soon!')
+        self.next_page_master.show()
         self.close()

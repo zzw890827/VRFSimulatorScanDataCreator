@@ -12,7 +12,7 @@ __copyright__ = 'Fujitsu General Limited'
 
 import sys
 from PyQt5.QtWidgets import QApplication
-# from dialog_welcome_view import DialogWelcome
+from view import DialogWelcome
 # from dialog_items_view import DialogItems
 # from view import DialogFinish
 from view import DialogMaterSlaveTest
@@ -22,10 +22,10 @@ from controller import write_csv_file
 from model import ExistTestFunction
 
 if __name__ == '__main__':
-    # app = QApplication(sys.argv)
+    app = QApplication(sys.argv)
     # ui = DialogMaterSlaveTest()
-    # ui.show()
-    # sys.exit(app.exec_())
-    test = create_vrf_system_list([1])
-    write_csv_file(test, 'test.csv')
-    print(test)
+    ui = DialogWelcome()
+    ui.show()
+    sys.exit(app.exec_())
+    # test = create_vrf_system_list([1, 3, 5])
+    # write_csv_file(test, 'test.csv')

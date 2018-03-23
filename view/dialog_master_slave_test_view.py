@@ -14,9 +14,15 @@ __copyright__ = 'Fujitsu General Limited'
 
 from PyQt5.QtCore import QRect, Qt, QCoreApplication
 from PyQt5.QtGui import QFont, QIcon, QImage, QPixmap
-from PyQt5.QtWidgets import QWidget, QAbstractItemView, QTableWidgetItem
+from PyQt5.QtWidgets import (QWidget, QAbstractItemView,
+                             QTableWidgetItem, QFileDialog)
 
 from ui import Ui_Dialog_master_slave_test
+
+from view import DialogFinish
+
+from controller import create_vrf_system_list
+from controller import write_csv_file
 
 
 class DialogMaterSlaveTest(QWidget, Ui_Dialog_master_slave_test):
@@ -45,6 +51,14 @@ class DialogMaterSlaveTest(QWidget, Ui_Dialog_master_slave_test):
             QPixmap.fromImage(self.image))
 
         self.setFixedSize(self.width(), self.height())  # サイズ変更禁止
+
+        # 完成画面
+        self.finish_page = DialogFinish()
+
+        # Signal
+        # 作成ボタン
+        self.btn_create_master_slave.clicked.connect(
+            self.write_master_slave_test_data)
 
         # ==================風量グループ===================
         strength_group = [self.group_fan_strength_auto,
@@ -274,10 +288,34 @@ class DialogMaterSlaveTest(QWidget, Ui_Dialog_master_slave_test):
     def change_check_box_status(self, select_all=False):
         check_box_all = (self.sensor_check
                          + self.other_check
-                         + self.vertical_check
-                         + self.horizontal_check
                          + self.new_strength_check
-                         + self.strength_check)
+                         + self.strength_check
+                         + self.vertical_check
+                         + self.horizontal_check)
         if select_all:
             for i in check_box_all:
                 i.toggle()
+
+    # slot関数
+    # CSVファイル出力
+    def write_master_slave_test_data(self):
+        check_box_all = (self.sensor_check
+                         + self.other_check
+                         + self.new_strength_check
+                         + self.strength_check
+                         + self.vertical_check
+                         + self.horizontal_check)
+        checked_list = []
+        for element in check_box_all:
+            if element.isChecked():
+                checked_list.append(check_box_all.index(element))
+        # 保存画面
+        file_path, ok = QFileDialog.getSaveFileName(self, '保存',
+                                                    './UnitList.csv',
+                                                    'csv Files (*.csv)')
+        print(file_path)
+        write_csv_file(create_vrf_system_list(checked_list), file_path)
+
+        self.finish_page.show()
+        self.finish_page.start_process_bar()
+        self.close()

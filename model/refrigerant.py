@@ -45,7 +45,7 @@ class Vrf(object):
         prepare_6: 予備エリア
         prepare_7: 予備エリア
         prepare_8: 予備エリア
-        function_1: 追加機能
+        function: 追加機能
 
     """
 

@@ -78,9 +78,7 @@ def build_master_slave_test_system(items):
                         items[i])
                     slave.function = exist_test_function.get_function(
                         items[i])
-                slave.list_all_members()
                 vrf_system.append(inner)
                 vrf_system.append(slave)
                 j = j + 2
-                ac_adr = ac_adr + 1
     return vrf_system
