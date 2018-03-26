@@ -32,25 +32,25 @@ class DialogItems(QWidget, Ui_Dialog_items):
         self.default_font = '游ゴシック 本文'
         self.icon_path = 'resources/icons/wizard.png'
 
+        radio_table = [self.radio_1_items, self.radio_2_items,
+                       self.radio_3_items, self.radio_4_items,
+                       self.radio_5_items]
+
+        label_table = [self.label_1_radio_items,
+                       self.label_2_radio_items,
+                       self.label_3_radio_items,
+                       self.label_4_radio_items,
+                       self.label_5_radio_items]
+
         # フォント
-        self.label_1_items.setStyleSheet('font: 14px')
-        self.label_1_items.setFont(QFont(self.default_font))
-        self.label_2_items.setStyleSheet('font: 14px')
-        self.label_2_items.setFont(QFont(self.default_font))
-        self.label_3_items.setStyleSheet('font: 14px')
-        self.label_3_items.setFont(QFont(self.default_font))
-        self.label_1_radio_items.setStyleSheet('font: 14px;'
-                                               'color: blue')
-        self.label_1_radio_items.setFont(QFont(self.default_font))
-        self.label_2_radio_items.setStyleSheet('font: 14px;'
-                                               'color: blue')
-        self.label_2_radio_items.setFont(QFont(self.default_font))
-        self.radio_1_items.setStyleSheet('font: 14px;'
-                                         'color: blue')
-        self.radio_1_items.setFont(QFont(self.default_font))
-        self.radio_2_items.setStyleSheet('font: 14px;'
-                                         'color: blue')
-        self.radio_2_items.setFont(QFont(self.default_font))
+        for e in radio_table:
+            e.setFont(QFont(self.default_font))
+            e.setStyleSheet('font: 14px')
+
+        for e in label_table:
+            e.setFont(QFont(self.default_font))
+            e.setStyleSheet('font: 14px')
+
         self.btn_create_items.setFont(QFont(self.default_font))
         self.btn_detail_items.setFont(QFont(self.default_font))
         self.btn_cancel_items.setFont(QFont(self.default_font))
